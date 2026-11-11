@@ -1,5 +1,5 @@
 """
-Air Discharge Consents Analytics (Streamlit)
+Air Discharge Consent Analytics (Streamlit)
 
 Run:  pip install streamlit pdfplumber pandas plotly pyproj openpyxl reportlab anthropic
       streamlit run consent_app.py
@@ -1102,11 +1102,11 @@ def render_header():
       <div class="main">
         <div class="left">
           <img class="logo" src="data:image/png;base64,{LOGO_B64}" alt="Auckland Council">
-          <div><h1>Air Discharge Consents Analytics</h1>
-          <p class="sub">Auckland Unitary Plan air discharge consents - read straight from the decision and memo PDFs.</p></div>
+          <div><h1>Air Discharge Consent Analytics</h1>
+          <p class="sub">Analyse Auckland Unitary Plan air discharge consents directly from decision and specialist memo PDFs.</p></div>
         </div>
-        <span class="chip">Conditions: consent PDF</span><span class="chip">Years, rules, details: memo PDF</span>
-        <span class="chip">Nothing is guessed</span>
+        <span class="chip">Consent conditions from decision</span><span class="chip">Years, rules, details: memo PDF</span>
+        <span class="chip">Source-grounded outputs</span>
       </div>
       <div class="right">
         <div class="time" id="t">--:--:-- --</div>
