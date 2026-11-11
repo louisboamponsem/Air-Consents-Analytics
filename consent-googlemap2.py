@@ -1138,9 +1138,9 @@ except ImportError:
     st.error("This dashboard needs plotly: run `pip install plotly` and restart the app.")
     st.stop()
 
-files = st.file_uploader("Upload consent and memo PDFs (pairs are matched on the DIS number)", type="pdf", accept_multiple_files=True)
+files = st.file_uploader("Upload documents", type="pdf", accept_multiple_files=True)
 if not files:
-    st.info("Upload the consent and memo PDFs to begin. Nothing is kept between runs.")
+    st.info("Upload the final consent decision and associated specialist memo (Files are matched using the DIS application number).")
     st.stop()
 
 key = tuple((f.name, f.size) for f in files)
